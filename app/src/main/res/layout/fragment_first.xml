@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentFirstT">
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rV"
+        android:name="com.example.laab2.FragmentFirst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context=".FragmentFirstT"
+        tools:listitem="@layout/animal_card" />
+</FrameLayout>

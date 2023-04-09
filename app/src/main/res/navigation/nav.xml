@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragmentFirstT">
+
+    <fragment
+        android:id="@+id/fragmentFirstT"
+        android:name="com.example.laab2.FragmentFirstT"
+        android:label="FragmentFirstT" >
+        <action
+            android:id="@+id/action_fragmentFirstT_to_fragmentSecondT"
+            app:destination="@id/fragmentSecondT" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSecondT"
+        android:name="com.example.laab2.FragmentSecondT"
+        android:label="FragmentSecondT" >
+        <action
+            android:id="@+id/action_fragmentSecondT_to_fragmentFirstT"
+            app:destination="@id/fragmentFirstT" />
+    </fragment>
+</navigation>
